@@ -1,8 +1,8 @@
 /*
 * @Author: karlo
 * @Date:   2016-07-05 02:27:52
-* @Last Modified by:   karlo
-* @Last Modified time: 2016-07-05 11:25:46
+* @Last Modified by:   Karlo Espiritu
+* @Last Modified time: 2016-07-05 17:35:32
 */
 
 'use strict';
@@ -29,8 +29,8 @@ class DoublyLinkedList {
     }
     else {
         this.tail.next = node
-        node.prev      = this.tail
-        this.tail      = node
+        node.prev = this.tail
+        this.tail = node
     }
 
     return node
@@ -58,36 +58,35 @@ class DoublyLinkedList {
 
   find(data) {
 
-        let curr = this.head
+    let curr = this.head
 
-        while (curr) {
-            if (curr.data === data) {
-                return curr
-            }
-            curr = curr.next
-        }
+    while (curr) {
+      if (curr.data === data) {
+          return curr
+      }
+      curr = curr.next
+    }
 
   }
 
   print() {
     let curr = this.head;
-
     while (curr) {
-        console.log(curr);
-        curr = curr.next;
+      console.log(curr);
+      curr = curr.next;
     }
   }
 }
 
-    var myList = new DoublyLinkedList();
+var myList = new DoublyLinkedList();
 
-    myList.insert('L');
-    myList.insert('M');
-    myList.insert('N');
-    myList.insert('O');
-    myList.insert('P');
+myList.insert('L');
+myList.insert('M');
+myList.insert('N');
+myList.insert('O');
+myList.insert('P');
 
-    myList.remove('M');
-    myList.find('L');
-    myList.print();
+myList.remove('M');
+myList.find('L');
+myList.print();
 
