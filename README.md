@@ -12,14 +12,14 @@ The following are some fundamental data structures and algorithms important to f
 
 ## Data Structures
 
-* Binary Trees
-* Doubly Linked Lists
-* HashTables
-* MaxHeaps
-* Queues
-* Singly Linked Lists
-* Stacks
-* Tries
+* Binary Tree
+* Doubly Linked List
+* Hash Table
+* Max Heap
+* Queue
+* Singly Linked List
+* Stack
+* Trie
 
 ## Sorting Algorithms
 
