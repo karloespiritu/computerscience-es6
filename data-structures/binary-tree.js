@@ -2,11 +2,10 @@
 * @Author: karlo
 * @Date:   2016-07-04 22:36:52
 * @Last Modified by:   Karlo Espiritu
-* @Last Modified time: 2016-07-08 16:19:22
+* @Last Modified time: 2016-07-11 16:30:05
 */
 
 'use strict';
-
 
 class BinaryTree {
 

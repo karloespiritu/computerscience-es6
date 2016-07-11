@@ -2,17 +2,10 @@
 * @Author: Karlo Espiritu
 * @Date:   2016-07-05 18:45:41
 * @Last Modified by:   Karlo Espiritu
-* @Last Modified time: 2016-07-06 18:37:08
+* @Last Modified time: 2016-07-11 16:30:19
 */
 
 'use strict';
-
-// class LinkedNode {
-//   constructor(data) {
-//     this.data = data
-//     this.next = null
-//   }
-// }
 
 class LinkedList {
 
