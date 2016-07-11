@@ -2,17 +2,10 @@
 * @Author: Karlo Espiritu
 * @Date:   2016-07-05 17:35:58
 * @Last Modified by:   Karlo Espiritu
-* @Last Modified time: 2016-07-06 18:33:59
+* @Last Modified time: 2016-07-11 16:51:39
 */
 
 'use strict';
-
-// class HashStruc {
-//   constructor(val) {
-//     this.val = val
-//     this.next = null
-//   }
-// }
 
 class HashTable {
   constructor() {
