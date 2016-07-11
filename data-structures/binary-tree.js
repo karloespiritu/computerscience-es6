@@ -2,19 +2,11 @@
 * @Author: karlo
 * @Date:   2016-07-04 22:36:52
 * @Last Modified by:   Karlo Espiritu
-* @Last Modified time: 2016-07-06 01:18:02
+* @Last Modified time: 2016-07-08 16:19:22
 */
 
 'use strict';
 
-class BinaryNode {
-  constructor(val) {
-    this.val = val
-    // new node are leaves
-    this.left = null
-    this.right = null
-  }
-}
 
 class BinaryTree {
 
@@ -23,7 +15,14 @@ class BinaryTree {
   }
 
   insert(val) {
-    let node = new BinaryNode(val)
+    // let node = new BinaryNode(val)
+
+    let node = {
+      val: val,
+      // new node are leaves
+      left: null,
+      right: null
+    }
 
     if (this.root === null) {
       this.root = node
@@ -62,9 +61,9 @@ class BinaryTree {
   // pre-order insert
   insertNode(node, subtree) {
 
-    // no value in current tree, insert it here
+    // if no value in current tree, insert here
     if (!subtree) {
-        subtree = node
+      subtree = node
     }
     else if (node.val < subtree.val) {
         subtree.left = this.insertNode(node, subtree.left)
@@ -146,8 +145,8 @@ class BinaryTree {
     // case 1 - two children
     if (node.left && node.right) {
 
-      // find highest node on the left subtree
-      // copy it + its parent
+      // find highest node on left subtree
+      // copy it and its parent
 
       let replacement = node.left,
           replacementParent = node
@@ -213,16 +212,16 @@ class BinaryTree {
 } // end BinaryTree class
 
 let tree = new BinaryTree()
-    tree.insert(20)
-    tree.insert(10)
-    tree.insert(15)
-    tree.insert(16)
-    tree.insert(5)
-    tree.insert(8)
+    tree.insert(35)
     tree.insert(25)
+    tree.insert(55)
+    tree.insert(26)
+    tree.insert(15)
+    tree.insert(9)
+    tree.insert(18)
 
     tree.locate(15)
-    tree.remove(20)
+    tree.remove(25)
     tree.breadthFirstSearch(15)
 
     tree.printPreOrder(tree.root)

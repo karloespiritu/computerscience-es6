@@ -2,18 +2,18 @@
 * @Author: karlo
 * @Date:   2016-07-05 02:27:52
 * @Last Modified by:   Karlo Espiritu
-* @Last Modified time: 2016-07-06 01:19:27
+* @Last Modified time: 2016-07-06 18:33:32
 */
 
 'use strict';
 
-class LinkedNode {
-  constructor(data) {
-    this.data = data
-    this.next = null
-    this.prev = null
-  }
-}
+// class LinkedNode {
+//   constructor(data) {
+//     this.data = data
+//     this.next = null
+//     this.prev = null
+//   }
+// }
 
 class DoublyLinkedList {
   constructor() {
@@ -22,7 +22,13 @@ class DoublyLinkedList {
   }
 
   insert(data) {
-    let node = new LinkedNode(data)
+    // let node = new LinkedNode(data)
+
+    let node = {
+      data: data,
+      next: null,
+      prev: null
+    }
 
     if (!this.head) {
       this.head = this.tail = node

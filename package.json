@@ -1,0 +1,14 @@
+{
+  "name": "computerscience-es6",
+  "version": "1.0.0",
+  "description": "A collection of basic fundamental data structures and algorithms essential to front end development, all written in ES6.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "es6"
+  ],
+  "author": "Karlo Espiritu <karloespiritu@gmail.com> (http://karloespiritu.com/)",
+  "license": "MIT"
+}
